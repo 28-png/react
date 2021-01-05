@@ -7,8 +7,8 @@ function App() {
   return (
    <div>
      {/* <HelloWorld name="Matthew" /> */}
-    
-     <CounterExample />
+
+     {/* <CounterExample /> */}
 
    </div>
   );
