@@ -1,7 +1,7 @@
 import React from 'react';
 import HelloWorld from './Components/HelloWorld';
 import Header from './Components/Header';
-
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
        { <Header /> }
 
      <HelloWorld name="Matthew" />
+
+     { <Footer />}
 
      {/* <CounterExample /> */}
    </div>
