@@ -1,8 +1,7 @@
 import React from 'react';
 import HelloWorld from './Components/HelloWorld';
-import './App.css';
-import CounterExample from './Components/CounterExample';
-import Header from './Components/header';
+import Header from './Components/Header';
+
 
 function App() {
   return (
