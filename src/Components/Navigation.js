@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Header() {
+function Navigation() {
 return(
     <nav className="">
         
