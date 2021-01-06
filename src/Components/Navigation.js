@@ -10,6 +10,7 @@ return(
         <span className="text-xl">
         <FontAwesomeIcon 
              icon={faBars}
+             onClick={() => setShowMenu(true)}
         />
 
         </span>
