@@ -8,7 +8,9 @@ function Navigation() {
     let menu
 
     if(showMenu) {
-        menu = <div>
+        menu = <div 
+            className="fixed bg-white top-0 left-0 w-4/5 h-full"
+        >
             The Menu
         </div>
     }
