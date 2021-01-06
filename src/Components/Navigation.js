@@ -6,11 +6,11 @@ function Navigation() {
     const [showMenu, setShowMenu] = useState(false)
 
 return(
-    <nav className="">
+    <nav>
         <span className="text-xl">
         <FontAwesomeIcon 
              icon={faBars}
-             onClick={() => setShowMenu(true)}
+             onClick={() => setShowMenu(!showMenu)}
         />
 
         </span>
