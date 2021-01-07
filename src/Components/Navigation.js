@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
-
+import { BrowserRouter as Link } from 'react-router-dom'
 
 
 
@@ -55,10 +55,17 @@ return(
                     The Menu
                 </span>
                 <ul>
-                    <li>
-                        Home
-                    </li>
-                </ul>
+            <li>
+                <Link to="/" className="text-blue-500">
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link to="/about" className="text-blue-500">
+                    About
+                </Link>
+            </li>
+            </ul>
         </animated.div>
         )
     }

@@ -17,19 +17,21 @@ function App() {
      <HelloWorld name="Matthew" />
 
     <Router>
-     <ul>
-       <li>
-         <Link to="/" className="text-blue-500">
-            Home
-         </Link>
-       </li>
-       <li>
-         <Link to="/about" className="text-blue-500">
-            About
-         </Link>
-       </li>
-     </ul>
+    
+
+        <Switch>
+            <Route exact path="/">
+                <h1 className="font-bold text-2xl" >This is the Home Page</h1>
+            </Route>
+            <Route path="/about">
+                <h1 className="font-bold text-2xl" >About Us</h1>
+            </Route>
+        </Switch>
+
      </Router>
+
+
+
      { <Footer />}
 
    </div>
