@@ -16,14 +16,20 @@ function App() {
 
      <HelloWorld name="Matthew" />
 
+    <Router>
      <ul>
        <li>
-         <Link to="/">
+         <Link to="/" className="text-blue-500">
             Home
          </Link>
        </li>
+       <li>
+         <Link to="/about" className="text-blue-500">
+            About
+         </Link>
+       </li>
      </ul>
-
+     </Router>
      { <Footer />}
 
    </div>
