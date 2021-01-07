@@ -15,7 +15,7 @@ function Navigation() {
     leave: { opacity: 0 },
     })
 
-    const transitions = useTransition(showMenu, null, {
+    const menuTransitions = useTransition(showMenu, null, {
         from: { position: 'absolute', opacity: 0 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
@@ -45,7 +45,7 @@ return(
         )
     }
     {
-        transitions.map(({ item, key, props }) =>
+        menuTransitions.map(({ item, key, props }) =>
         item && <animated.div 
         key={key} 
         style={props}
