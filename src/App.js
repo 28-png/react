@@ -12,12 +12,13 @@ import {
 function App() {
   return (
    <div>
-       { <Header /> }
-
-     <HelloWorld name="Matthew" />
-
+     
     <Router>
-    
+      
+    { <Header /> }
+
+    <HelloWorld name="Matthew" />
+
 
         <Switch>
             <Route exact path="/">
@@ -28,11 +29,13 @@ function App() {
             </Route>
         </Switch>
 
+        { <Footer />}
+
      </Router>
 
 
 
-     { <Footer />}
+    
 
    </div>
   );
