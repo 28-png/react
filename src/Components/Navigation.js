@@ -15,6 +15,12 @@ function Navigation() {
     leave: { opacity: 0 },
     })
 
+    const transitions = useTransition(showMenu, null, {
+        from: { position: 'absolute', opacity: 0 },
+        enter: { opacity: 1 },
+        leave: { opacity: 0 },
+        })
+
 
 
 return(
