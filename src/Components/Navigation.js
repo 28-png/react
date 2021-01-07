@@ -51,7 +51,7 @@ return(
         style={props}
         className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow p-3"
         >
-                <span>
+                <span className="font-bold">
                     The Menu
                 </span>
                 <ul>
