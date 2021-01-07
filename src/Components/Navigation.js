@@ -15,7 +15,9 @@ function Navigation() {
         </div>
         
         menuMask =
-        <div className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50">
+        <div className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
+        onClick={() => setShowMenu(false)}
+        >
 
 
         </div>
