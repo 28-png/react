@@ -13,9 +13,17 @@ const [product, setProduct] = useState(null)
     })
     }, [url])
 
+    if(product) {
+        return(
+            <div>
+                <h1>{product.name}</h1>
+            </div>
+        )
+    }
+
     return(
         <div>
-            <h1 className="font-bold text-2xl mb-3" >Products</h1>
+
         </div>
 
     )
