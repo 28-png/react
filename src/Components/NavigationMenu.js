@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom'
 function navigationMenu(props) {
     return(
         <div>
-                <span className="font-bold">
+                <div className="font-bold">
                     The Menu
-                </span>
+                </div>
                 <ul>
             <li>
-                <Link to="/" className="text-blue-500 py-3 border-t border-b"
+                <Link to="/" className="text-blue-500 py-3 border-t border-b block"
                     onClick={props.closeMenu }
                 >
                     Home
                 </Link>
             </li>
             <li>
-                <Link to="/about" className="text-blue-500"
+                <Link to="/about" className="text-blue-500 py-3 border-b block"
                 onClick={props.closeMenu}>
                     About
                 </Link>
