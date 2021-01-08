@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function navigationMenu(props) {
     return(
         <div>
-                <div className="font-bold">
+                <div className="font-bold py-3">
                     The Menu
                 </div>
                 <ul>
