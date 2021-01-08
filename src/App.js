@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom'
 import Home from './Views/Home'
 import About from './Views/About'
+import Products from './Views/Products'
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/about">
                 <About />
+            </Route>
+            <Route path="/products/:id">
+                <Products />
             </Route>
         </Switch>
         </div>
