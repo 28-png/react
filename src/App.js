@@ -1,5 +1,4 @@
 import React from 'react';
-import HelloWorld from './Components/HelloWorld';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import {
@@ -8,6 +7,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import Home from './Views/Home'
+import About from './Views/About'
 
 function App() {
   return (
@@ -17,15 +18,15 @@ function App() {
       
     { <Header /> }
 
-    <HelloWorld name="Matthew" />
+   
 
 
         <Switch>
             <Route exact path="/">
-                <h1 className="font-bold text-2xl" >This is the Home Page</h1>
+                  <Home />
             </Route>
             <Route path="/about">
-                <h1 className="font-bold text-2xl" >About Us</h1>
+                <About />
             </Route>
         </Switch>
 
