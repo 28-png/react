@@ -18,9 +18,7 @@ function App() {
       
     { <Header /> }
 
-   
-
-
+        <div className="p-3">
         <Switch>
             <Route exact path="/">
                   <Home />
@@ -29,6 +27,7 @@ function App() {
                 <About />
             </Route>
         </Switch>
+        </div>
 
         { <Footer />}
 
