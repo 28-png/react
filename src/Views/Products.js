@@ -8,21 +8,31 @@ const { id } = useParams()
 const url = `https://5ff7d19c10778b0017042839.mockapi.io/api/v1/PRODUCTS/${id}`
 const [product, setProduct] = useState({
     loading: false,
-    data: null
+    data: null,
+    error: false
 })
     useEffect(() => {
         setProduct({
             loading: true,
             data: null,
+            error: false
 
         })
         axios.get(url)
     .then(response => {
         setProduct({
             loading: false,
-            data: response.data
+            data: response.data,
+            error: false
         })
 
+    })
+    .catch(error => {
+        setProduct({
+            loading: false,
+            data: null,
+            error: true
+        })
     })
     }, [url])
 
