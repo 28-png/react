@@ -27,7 +27,7 @@ const [product, setProduct] = useState({
         })
 
     })
-    .catch(error => {
+    .catch(() => {
         setProduct({
             loading: false,
             data: null,
@@ -35,6 +35,12 @@ const [product, setProduct] = useState({
         })
     })
     }, [url])
+
+    if(product.error) {
+        return(
+            <p>There was an error please refresh the page</p>
+        )
+    }
 
     if(product.loading){
         return(
