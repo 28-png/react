@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router'
+import Loader from '../Components/Loader'
 
 function Products() {
 const { id } = useParams()
@@ -27,7 +28,7 @@ const [product, setProduct] = useState({
 
     if(product.loading){
         return(
-            <p>...loading</p>
+            <Loader></Loader>
         )
     }
 

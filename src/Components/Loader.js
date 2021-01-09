@@ -1,6 +1,6 @@
 import React from 'react'
 
-function loader() {
+function Loader() {
     return(
         <div className="flex justify-center">
             <div className="loader"></div>
