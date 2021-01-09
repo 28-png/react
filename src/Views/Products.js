@@ -20,7 +20,7 @@ const [product, setProduct] = useState(null)
                 </h1>
                 <div>
                 <img
-                    src={product.images}
+                    src={product.imageUrl[0].imageUrl}
                     alt={product.name}
                 />
             </div>
