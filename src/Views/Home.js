@@ -1,5 +1,6 @@
 import React from 'react'
-import HelloWorld from '../Components/HelloWorld';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 function Home() {
 const url = `https://5ff7d19c10778b0017042839.mockapi.io/api/v1/PRODUCTS?page=1&limit=10`
 const [product, setProduct] = useState({
