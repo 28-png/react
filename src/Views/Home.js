@@ -51,10 +51,12 @@ const [products, setProducts] = useState({
 
     if(products.data) {
         content =
-            <div>
-                There is some data
-            </div>
-           
+            products.data.map((product, key) => 
+                <div>
+                    
+
+                </div>
+            )
         
     }
 
