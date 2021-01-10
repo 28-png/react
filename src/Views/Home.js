@@ -36,15 +36,15 @@ const [products, setProducts] = useState({
     let content = null
 
     if(product.error) {
-        return(
+        content =
             <p>There was an error please refresh the page</p>
-        )
+        
     }
 
     if(product.loading){
-        return(
+        content =
             <Loader></Loader>
-        )
+        
     }
     
     return(
