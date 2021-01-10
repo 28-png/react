@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Loader from '../Components/Loader'
 function Home() {
 const url = `https://5ff7d19c10778b0017042839.mockapi.io/api/v1/PRODUCTS?page=1&limit=10`
 const [products, setProducts] = useState({
@@ -33,6 +34,18 @@ const [products, setProducts] = useState({
     }, [url])
 
     let content = null
+
+    if(product.error) {
+        return(
+            <p>There was an error please refresh the page</p>
+        )
+    }
+
+    if(product.loading){
+        return(
+            <Loader></Loader>
+        )
+    }
     
     return(
         <div>
