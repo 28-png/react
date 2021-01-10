@@ -1,7 +1,7 @@
 import React from 'react'
 import HelloWorld from '../Components/HelloWorld';
 function Home() {
-const url = `https://5ff7d19c10778b0017042839.mockapi.io/api/v1/PRODUCTS/${id}`
+const url = `https://5ff7d19c10778b0017042839.mockapi.io/api/v1/PRODUCTS?page=1&limit=10`
 const [product, setProduct] = useState({
     loading: false,
     data: null,
