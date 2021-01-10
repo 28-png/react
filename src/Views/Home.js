@@ -48,6 +48,16 @@ const [products, setProducts] = useState({
             <Loader></Loader>
         
     }
+
+    if(products.data) {
+        content =
+            <div>
+                There is some data
+            </div>
+           
+        
+    }
+
     
     return(
         <div>
