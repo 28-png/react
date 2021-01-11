@@ -18,6 +18,9 @@ function ProductCard(props) {
                     { props.product.name }
                 </Link>
             </h3>
+            <div className="font-bold mb-3">
+                $ { props.product.price }
+            </div>
            </div>
         </div>
 
