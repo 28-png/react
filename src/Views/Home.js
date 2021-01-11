@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Loader from '../Components/Loader'
+import ProductCard from '../Components/ProductCard'
 
 
 function Home() {
@@ -53,7 +54,9 @@ const [products, setProducts] = useState({
         content =
             products.data.map((product, key) => 
                 <div>
-                    { product.name }
+                    <ProductCard 
+                        product = { product }
+                    />
 
                 </div>
             )
