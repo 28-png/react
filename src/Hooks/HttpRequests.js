@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react'
+import axios from 'axios'
 
-export function useAxiosGet() {
+export function useAxiosGet(url) {
     const [products, setProducts] = useState({
         loading: false,
         data: null,
@@ -30,4 +31,6 @@ export function useAxiosGet() {
             })
         })
         }, [url])
+
+        return products
 }
