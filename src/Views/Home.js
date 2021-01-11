@@ -52,8 +52,8 @@ const [products, setProducts] = useState({
 
     if(products.data) {
         content =
-            products.data.map((product, key) => 
-                <div>
+            products.data.map((product) => 
+                <div key={product.id}>
                     <ProductCard 
                         product = { product }
                     />
