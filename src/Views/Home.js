@@ -53,7 +53,7 @@ const [products, setProducts] = useState({
         content =
             products.data.map((product, key) => 
                 <div>
-                    
+                    { product.name }
 
                 </div>
             )
